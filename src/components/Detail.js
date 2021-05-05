@@ -26,17 +26,11 @@ function Detail() {
           <img src="/images/group-icon.png"></img>
         </GroupWatchBottom>
       </Controls>
-      <SubTitle>2018 - 7m - Family, Fantasy, Kids, Animation</SubTitle>
+      <SubTitle>2018 • 7m • Family, Fantasy, Kids, Animation</SubTitle>
       <Description>
-        In “Bao,” an aging Chinese mom suffering from empty nest syndrome gets
-        another chance at motherhood when one of her dumplings springs to life
-        as a lively, giggly dumpling boy. Mom excitedly welcomes this new bundle
-        of joy into her life, but Dumpling starts growing up fast, and Mom must
-        come to the bittersweet revelation that nothing stays cute and small
-        forever. This short film from Pixar Animation Studios and director Domee
-        Shi explores the ups and downs of the parent-child relationship through
-        the colorful, rich, and tasty lens of the Chinese immigrant community in
-        Canada.
+        A Chinese mom who’s sad when her grown son leaves home gets another
+        chance at motherhood when one of her dumplings springs to life. But she
+        finds that nothing stays cute and small forever.
       </Description>
     </Container>
   );
@@ -113,7 +107,7 @@ const AddButton = styled.button`
   background-color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
   span {
-    font-size: 30px;
+    font-size: 35px;
     color: white;
   }
 `;
@@ -129,8 +123,8 @@ const SubTitle = styled.div`
 `;
 const Description = styled.div`
   line-height: 1.4;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 16px;
   color: rgb(249, 249, 249);
-  max-width: 700px;
+  max-width: 760px;
 `;
