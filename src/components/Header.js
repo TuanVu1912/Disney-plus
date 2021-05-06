@@ -1,20 +1,18 @@
 import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import {
   selectUserName,
-  selectUserPhoto,
-  setUserLogin,
   setSignOut,
+  setUserLogin,
 } from "../features/user/userSlice";
-import { useDispatch, useSelector } from "react-redux";
 import { auth, provider } from "../firebase";
-import { useHistory } from "react-router-dom";
 
 function Header() {
   const dispatch = useDispatch();
   const history = useHistory();
   const userName = useSelector(selectUserName);
-  const userPhoto = useSelector(selectUserPhoto);
 
   useEffect(() => {
     auth.onAuthStateChanged(async (user) => {
