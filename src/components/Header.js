@@ -50,13 +50,44 @@ function Header() {
       })
       .catch((err) => alert(err.message));
   };
+
   return (
     <Nav>
       <Logo src="/images/logo.svg" alt="" />
       {!userName ? (
-        <LoginContainer>
-          <Login onClick={signIn}>Login</Login>
-        </LoginContainer>
+        // <LoginContainer>
+        //<Login onClick={signIn}>Login</Login>
+        //</LoginContainer>
+
+        <>
+          <NavMenu>
+            <a>
+              <img src="/images/home-icon.svg " alt=""></img>
+              <span>HOME</span>
+            </a>
+            <a>
+              <img src="/images/search-icon.svg " alt=""></img>
+              <span>SEARCH</span>
+            </a>
+            <a>
+              <img src="/images/watchlist-icon.svg " alt=""></img>
+              <span>WATCHLIST</span>
+            </a>
+            <a>
+              <img src="/images/original-icon.svg " alt=""></img>
+              <span>ORIGINALS</span>
+            </a>
+            <a>
+              <img src="/images/movie-icon.svg " alt=""></img>
+              <span>MOVIES</span>
+            </a>
+            <a>
+              <img src="/images/series-icon.svg " alt=""></img>
+              <span>SERIES</span>
+            </a>
+          </NavMenu>
+          <UserImg onClick={signOut} src="/images/user.jpg" alt=""></UserImg>
+        </>
       ) : (
         <>
           <NavMenu>
